@@ -1,0 +1,107 @@
+.column-4 {
+  width: 100%;
+}
+
+.column-3 {
+  width: 75%;
+}
+
+.column-2 {
+  width: 50%;
+}
+
+.column-1 {
+  width: 25%;
+}
+
+.icon-search {
+  background: url(/images/icons/search.svg) no-repeat 0 0;
+}
+
+.icon-more {
+  background: url(/images/icons/more.svg) no-repeat 0 0;
+}
+
+.icon-arrow {
+  background: url(/images/icons/arrow.svg) no-repeat 0 0;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.2;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 26px;
+  line-height: 1.4;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.container {
+  width: 100px;
+  height: 50px;
+}
+
+.wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  color: #427ef6;
+  background: transparent;
+  border: 1px solid #f6ba42;
+}
+
+menu1 {
+  background-color: rgb(36.2181818182, 105.6727272727, 244.5818181818);
+}
+
+menu2 {
+  background-color: rgb(11.3454545455, 86.9818181818, 238.2545454545);
+}
+
+menu3 {
+  background-color: rgb(9.9272727273, 76.1090909091, 208.4727272727);
+}
+
+menu4 {
+  background-color: rgb(8.5090909091, 65.2363636364, 178.6909090909);
+}
+
+menu5 {
+  background-color: rgb(7.0909090909, 54.3636363636, 148.9090909091);
+}
+
+.icon-heart {
+  background: url("./assets/heart.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.icon-check-on {
+  background: url("./assets/check-on.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.icon-check-off {
+  background: url("./assets/check-off.svg");
+  width: 20px;
+  height: 20px;
+}

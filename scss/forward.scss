@@ -1,0 +1,13 @@
+@use 'modules' as *;
+/*use 'modules/index*/
+
+/*.wrapper {
+  margin: modules.$spacing-lg;
+  background: modules.$secondary;
+}
+*/
+.wrapper {
+  margin: $spacing-lg;
+  background: $color-secondary;
+  color: $secondary;
+}

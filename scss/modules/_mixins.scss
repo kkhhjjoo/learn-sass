@@ -1,0 +1,56 @@
+@mixin resetList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin a11yHidden() {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0,0,0,0);
+  clip-path: circle(0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+@mixin resetTable() {
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  caption {
+    @include a11yHidden();
+  }
+}
+
+@mixin flexbox($direction: row,
+  $justify: center,
+  $align: center,
+  $wrap: nowrap,
+  $content: space-between) {
+  
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  align-content: $content;
+}
+
+@mixin makeA11yHidden($selector...) {
+  #{$selector} {
+    @include a11yHidden();
+  }
+}
+
+@mixin hover {
+  &:not(:disabled):hover {  // 대괄호 제거
+    border: 2px solid #f73;
+    border-radius: 0.5rem;
+
+    @content;
+  }
+}

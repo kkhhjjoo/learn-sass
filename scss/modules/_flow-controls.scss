@@ -1,0 +1,95 @@
+@use 'sass:math';
+@use 'sass:color';
+@use 'sass:list';
+
+//@if, @else, @else if 규칙
+@mixin size($width, $height: null, $rounded: null) {
+  width: $width;
+  @if $height != null {
+    height: $height;
+  }@else {
+    height: $width;
+  }
+
+  @if $rounded == sm {
+    border-radius: 2px;
+  } @else if $rounded == md {
+    border-radius: 4px;
+  } @else if $rounded == lg {
+    border-radius: 6px;
+  } @else if $rounded == xl {
+    border-radius: 8px;
+  } @else {
+    border-radius: $rounded;
+  }
+}
+
+@mixin ghost($color, $border-color: null) {
+  color: $color;
+  background: transparent;
+  border: 1px solid if($border-color == null, $color, $border-color);
+}
+
+//반복 처리 - @while
+$count: 4;
+$width: math.div(1, $count);
+@debug $width;
+
+@while $count > 0{
+  //조건이 참일떄 실행될 코드 블록
+  .column-#{$count} {
+    width: math.percentage($width * $count);
+  }
+
+  $count: $count - 1;
+}
+
+//반복 처리 - @for
+@mixin colorScale($color, $selector){
+  @for $i from 1 through 5 {
+    #{$selector}#{$i} {
+      background-color: color.scale($color, $lightness: -(10% * $i));
+    }
+  }
+}
+
+//반복 처리 - @each
+@each $icon in search more arrow {
+  .icon-#{$icon} {
+    background: url(/images/icons/#{$icon}.svg) no-repeat 0 0;
+  }
+}
+
+$headings: (
+  h1: 64px 1.2,
+  h2: 48px 1.2,
+  h3: 32px 1.2,
+  h4: 26px 1.4
+);
+
+@each $name, $values in $headings {
+  $font-size: list.nth($values, 1);
+  $line-height: list.nth($values, 2);
+  #{$name} {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-size: $font-size;
+    font-weight: bold;
+  }
+}
+
+%point-events-none {
+  pointer-events: none;
+}
+
+@mixin setIcons ($icons, $size: 24, $path: './assets'){
+  $size: if(math.is-unitless($size), $size * 1px, $size);
+
+  @each $name in $icons {
+    .icon-#{$name} {
+      background: url('#{$path}/#{$name}.svg');
+      width: $size;
+      height: $size;
+    }
+  }
+}

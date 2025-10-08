@@ -1,0 +1,16 @@
+.button--success, .button--active {
+  color: #121212;
+  background: #fff;
+  border: 1px solid currentColor;
+  padding: 0.5rem 1rem;
+}
+
+.button--active {
+  color: #bf2243;
+  font-weight: 700;
+}
+
+.button--success {
+  color: #18702a;
+  font-weight: 700;
+}

@@ -1,0 +1,9 @@
+$spacing-1: 4px;
+$_spacing-2: 8px;
+$primary-400: hsl(250, 75%, 60%);
+$primary-500: hsl(250, 75%, 50%);
+$secondary: #f7e3c7;
+
+.box {
+  padding: $_spacing-2;
+}

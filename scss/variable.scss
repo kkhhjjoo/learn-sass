@@ -1,0 +1,41 @@
+//전역 변수
+
+$spacing: 0.5rem;
+$white: #fff;
+$black: #121212;
+$red: #f00;
+
+//변수 재할당
+$primary-color: $black;
+
+//변수 이름에 하이픈 및 언더바 사용
+$base-color: #bf2243;
+$border-color: rgba($base-color, 0.7);
+
+.alert {
+  border: 1px solid $border_color;
+}
+
+.container {
+  //지역변수
+  $size: 24px;
+  $spacing: 1.5rem;
+
+  margin: $spacing;
+  color: $primary-color;
+  font-size: $size;
+}
+
+.group {
+  padding: $spacing;
+}
+
+$color: #bf2243;
+.rule-1 {
+  color: $color;
+}
+
+$color: #0e0948;
+.rule-2 {
+  color: $color;
+}

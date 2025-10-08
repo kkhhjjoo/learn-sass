@@ -1,0 +1,7 @@
+@use "./modules/config" as *;
+
+.container {
+  margin-top: $spacing-1;
+  color: $primary-400;
+  padding: $spacing-1;
+}

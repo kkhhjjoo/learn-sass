@@ -1,0 +1,13 @@
+@use "modules/mixins" as *;
+
+.flex-container {
+  @include flexbox( $direction: column, $wrap: wrap);
+}
+
+@include makeA11yHidden(".headline", "legend");
+
+.button {
+  @include hover {
+    background: rgb(214, 236, 133);
+  }
+}

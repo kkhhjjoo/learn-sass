@@ -1,0 +1,52 @@
+@use 'sass:meta';
+
+//null
+$nothing: null;
+@debug meta.type-of($nothing);
+
+//number
+$num: 101;
+$unit: 180px;
+@debug meta.type-of($num);
+@debug meta.type-of($unit);
+
+//string
+$pretendard: Pretendard;
+$spoqa: 'Spoqa Han Sans Neo';
+@debug meta.type-of($pretendard);
+@debug meta.type-of($spoqa);
+
+//color
+$hex: #f94e07;
+$keyword: purple;
+$color-function: hsl(18, 95%, 50%);
+
+@debug meta.type-of($hex);
+@debug meta.type-of($keyword);
+@debug meta.type-of($color-function);
+
+//bool
+$yes: true;
+$no: false;
+@debug meta.type-of($yes);
+@debug meta.type-of($no);
+
+//list
+$units: 20px 10px 0;
+$font-families: Pretendard, Helvetica, sans-serif;
+$square-bracket: [Verdana sans-serif];
+@debug meta.type-of($units);
+@debug meta.type-of($font-families);
+@debug meta.type-of($square-bracket);
+
+//map
+$light: (forground: #121916, background: #e7e6e7);
+$dark: (forground: #e7e6e7, background: #121916);
+@debug meta.type-of($light);
+@debug meta.type-of($dark);
+
+$theme: (
+  $light: (forground: #121916, background: #e7e6e7),
+$dark: (forground: #e7e6e7, background: #121916),
+);
+@debug meta.type-of($theme);

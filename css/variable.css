@@ -1,0 +1,21 @@
+.alert {
+  border: 1px solid rgba(191, 34, 67, 0.7);
+}
+
+.container {
+  margin: 1.5rem;
+  color: #121212;
+  font-size: 24px;
+}
+
+.group {
+  padding: 0.5rem;
+}
+
+.rule-1 {
+  color: #bf2243;
+}
+
+.rule-2 {
+  color: #0e0948;
+}

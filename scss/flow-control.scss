@@ -1,0 +1,19 @@
+@use 'modules/flow-controls' as *;
+
+
+.container {
+  @include size(100px, 50px)
+}
+
+.wrapper {
+  $hex1: #427ef6;
+  $hex2: #f6ba42;
+
+  @include size(150px, $rounded: md);
+  @include ghost($hex1,$hex2);
+}
+
+@include colorScale(#427ef6, 'menu');
+
+  $icons: heart, check-on, check-off;
+  @include setIcons($icons, 20);

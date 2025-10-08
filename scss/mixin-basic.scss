@@ -1,0 +1,12 @@
+@use "modules/mixins" as *;
+ul {
+  @include resetList;
+}
+
+.sr-only {
+  @include a11yHidden;
+}
+
+table {
+  @include resetTable;
+}

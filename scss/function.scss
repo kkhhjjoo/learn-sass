@@ -1,0 +1,18 @@
+@use 'modules/functions' as *;
+
+@debug PI();
+@debug removeUnit(16px);
+@debug removeUnit(3.5rem);
+@debug removeUnit(5em);
+@debug removeUnit(20%);
+
+@debug rem(20px);
+@debug rem(24px, 12px);
+
+@debug getRandomMinMax(10, 100);
+@debug getRandomMinMax($max: 50);
+
+@debug sum(15, 37, 52);
+
+$numbers: 20px, 180px, 76px, 58px;
+@debug sum($numbers...);

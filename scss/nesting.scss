@@ -1,0 +1,10 @@
+.main {
+  margin: 20px;
+
+  &_section {
+    padding: 10px;
+  }
+  @at-root .button {
+    background: #ffc;
+  }
+}

@@ -1,0 +1,15 @@
+.box {
+  padding: 8px;
+}
+
+/*use 'modules/index*/
+/*.wrapper {
+  margin: modules.$spacing-lg;
+  background: modules.$secondary;
+}
+*/
+.wrapper {
+  margin: 1.5rem;
+  background: hsl(330, 85%, 70%);
+  color: #f7e3c7;
+}

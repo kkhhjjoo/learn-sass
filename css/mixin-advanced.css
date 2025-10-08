@@ -1,0 +1,27 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.headline, legend {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip-path: circle(0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.button:not(:disabled):hover {
+  border: 2px solid #f73;
+  border-radius: 0.5rem;
+  background: rgb(214, 236, 133);
+}

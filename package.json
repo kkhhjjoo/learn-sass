@@ -1,0 +1,23 @@
+{
+  "name": "learn-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass style.scss style.css",
+    "update": "sass --update style.scss style.css",
+    "watch": "sass --update --watch style.scss style.css",
+    "sass-all": "sass scss:css",
+    "update-all": "sass --update --no-source-map scss:css",
+    "watch-all": "sass --update --watch --no-source-map scss:css",
+    "compressed-all": "sass --update --no-source-map scss:css --style compressed",
+    "no-map": "sass style.scss style.css --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "sass": "^1.93.2"
+  }
+}

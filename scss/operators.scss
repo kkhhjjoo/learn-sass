@@ -1,0 +1,54 @@
+@use 'sass:math';
+
+//숫자 연산자(단위를 가진 숫자 사이 연산)
+@debug 10px + 20px;
+@debug 2.5em - 0.5em;
+@debug 100px % 3;
+@debug 5px * 4px;
+
+//숫자 연산자(단위 없는 숫자와 단위를 가진 숫자와 함꼐 사용)
+@debug 5px * 4;
+
+//숫자 연산자(단위가 다른 숫자 연산)
+//@debug 20px + 1.5rem;
+@debug calc(20px + 1.5rem);
+
+//단항 연산자
+@debug +(1.5rem + 3.5rem);
+@debug -(20px + 35px);
+@debug -(90px - 100px);
+
+//나눗셈
+@debug math.div(90, 3);
+@debug math.div(100px, 5);
+@debug math.div(100px, 5px);
+
+//불리언 연산자
+@debug no true;
+@debug not false;
+
+@debug true and true;
+@debug false and false;
+@debug true and false;
+@debug false and true;
+
+@debug true or true;
+@debug false or false;
+@debug true or false;
+@debug false or true;
+
+//동등 비교 연산자
+@debug 1px == 1px;
+@debug 1px != 1em;
+
+@debug "Helvetica" == Helvetica;
+@debug "Helvetica" != "Arial";
+
+@debug (5px 7px 10px) == (5px, 7px, 10px);
+@debug (5px 7px 10px)!= (5px, 7px, 10px);
+
+//관계 비교 연산자
+@debug 100 > 50;
+@debug 10px < 17px;
+@debug 96px >= 1in;
+@debug 1000ms <= 1s;
